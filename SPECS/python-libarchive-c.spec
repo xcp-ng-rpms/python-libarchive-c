@@ -5,7 +5,11 @@ Summary:       Python interface to libarchive
 License:       CC0
 URL:           https://github.com/Changaco/python-libarchive-c
 #Source0:       https://github.com/Changaco/python-libarchive-c/archive/%{version}.tar.gz#/%{name}-%{version}.tar.gz
-Source0:       https://repo.citrite.net:443/ctx-local-contrib/xs-opam/python-libarchive-c-2.5.tar.gz
+
+Source0: https://repo.citrite.net:443/ctx-local-contrib/xs-opam/python-libarchive-c-2.5.tar.gz
+
+
+
 BuildRequires: libarchive-devel
 BuildRequires: python-setuptools
 BuildRequires: python-devel
@@ -24,7 +28,7 @@ A Python interface to libarchive. It uses the standard ctypes module to
 dynamically load and access the C library.
 
 %prep
-%autosetup -p1 -n python-libarchive-c-2.5
+%autosetup -p1
 
 %build
 %{__python} setup.py build
